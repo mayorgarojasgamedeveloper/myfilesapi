@@ -1,10 +1,10 @@
 var db = require('../db');
 
-exports.create = function(tipo,linea) {
-  console.log(`${tipo},${linea}`);
+exports.create = function(usuario,tipo,linea) {
+  console.log(`${usuario},${tipo},${linea}`);
   var response = db.INSERT(`lineainovadora`,
-  `tipo,linea`,
-  `${tipo},\'${linea}\'`,
+  `usuario,tipo,linea`,
+  `\'${usuario}\',${tipo},\'${linea}\'`,
   `*`);
   return response;
 }

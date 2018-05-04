@@ -1,10 +1,10 @@
 var db = require('../db');
 
-exports.create = function(tipo,nombre,autores,fecha,linea,subtipo,dependencia) {
-  console.log(`${tipo},${nombre},${autores},${fecha},${linea},${subtipo},${dependencia}`);
+exports.create = function(usuario,tipo,nombre,autores,fecha,linea,subtipo,dependencia) {
+  console.log(`${usuario},${tipo},${nombre},${autores},${fecha},${linea},${subtipo},${dependencia}`);
   var response = db.INSERT(`informetecnico`,
-  `tipo,nombre,autores,fecha,linea,subtipo,dependencia`,
-  `${tipo},\'${nombre}\',\'${autores}\',\'${fecha}\',\'${linea}\',\'${subtipo}\',\'${dependencia}\'`,
+  `usuario,tipo,nombre,autores,fecha,linea,subtipo,dependencia`,
+  `\'${usuario}\',${tipo},\'${nombre}\',\'${autores}\',\'${fecha}\',\'${linea}\',\'${subtipo}\',\'${dependencia}\'`,
   `*`);
   return response;
 }

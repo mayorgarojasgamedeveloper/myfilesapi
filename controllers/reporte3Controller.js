@@ -1,7 +1,7 @@
 var model = require('../models/reporte3Model');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.tipo,req.body.nombre,req.body.autores,req.body.fecha,req.body.linea,req.body.subtipo,req.body.no_registro);
+  var response = model.create(req.body.usuario,req.body.tipo,req.body.nombre,req.body.autores,req.body.fecha,req.body.linea,req.body.subtipo,req.body.no_registro);
   return response;
 };
 

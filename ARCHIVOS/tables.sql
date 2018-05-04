@@ -22,6 +22,7 @@ create table log (
 
 create table lineainovadora (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     linea		varchar(50) not null,
@@ -30,6 +31,7 @@ create table lineainovadora (
 
 create table proyecto (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     nombre		varchar(50) not null,
@@ -42,6 +44,7 @@ create table proyecto (
 
 create table reporte_4 (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     nombre		varchar(50) not null,
@@ -54,6 +57,7 @@ create table reporte_4 (
 
 create table reporte_1 (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     nombre		varchar(50) not null,
@@ -69,6 +73,7 @@ create table reporte_1 (
 
 create table reporte_2 (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     nombre		varchar(50) not null,
@@ -84,6 +89,7 @@ create table reporte_2 (
 
 create table reporte_3 (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     nombre		varchar(50) not null,
@@ -98,6 +104,7 @@ create table reporte_3 (
 
 create table informetecnico (
 	id			serial not null,
+    usuario		varchar(20),
     tipo		smallint not null, 
     -- Especializacion
     nombre		varchar(50) not null,

@@ -1,10 +1,10 @@
 var db = require('../db');
 
-exports.create = function(tipo,nombre,fecha_inicio,fecha_fin,colaboradores,instituciones) {
-  console.log(`${tipo},${nombre},${fecha_inicio},${fecha_fin},${colaboradores},${instituciones}`);
+exports.create = function(usuario,tipo,nombre,fecha_inicio,fecha_fin,colaboradores,instituciones) {
+  console.log(`${usuario},${tipo},${nombre},${fecha_inicio},${fecha_fin},${colaboradores},${instituciones}`);
   var response = db.INSERT(`proyecto`,
-  `tipo,nombre,fecha_inicio,fecha_fin,colaboradores,instituciones`,
-  `${tipo},\'${nombre}\',\'${fecha_inicio}\',\'${fecha_fin}\',\'${colaboradores}\',\'${instituciones}\'`,
+  `usuario,tipo,nombre,fecha_inicio,fecha_fin,colaboradores,instituciones`,
+  `\'${usuario}\',${tipo},\'${nombre}\',\'${fecha_inicio}\',\'${fecha_fin}\',\'${colaboradores}\',\'${instituciones}\'`,
   `*`);
   return response;
 }

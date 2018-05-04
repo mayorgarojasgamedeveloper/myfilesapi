@@ -1,7 +1,7 @@
 var model = require('../models/reporte4Model');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.tipo,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.nombre_empresa,req.body.nombre_alumno);
+  var response = model.create(req.body.usuario,req.body.tipo,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.nombre_empresa,req.body.nombre_alumno);
   return response;
 };
 

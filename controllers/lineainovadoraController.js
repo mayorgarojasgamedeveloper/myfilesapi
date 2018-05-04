@@ -1,7 +1,7 @@
 var model = require('../models/lineainovadoraModel');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.tipo,req.body.linea);
+  var response = model.create(req.body.usuario,req.body.tipo,req.body.linea);
   return response;
 };
 

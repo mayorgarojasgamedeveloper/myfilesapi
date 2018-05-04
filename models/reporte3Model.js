@@ -1,10 +1,10 @@
 var db = require('../db');
 
-exports.create = function(tipo,nombre,autores,fecha,linea,subtipo,no_registro) {
-  console.log(`${tipo},${nombre},${autores},${fecha},${linea},${subtipo},${no_registro}`);
+exports.create = function(usuario,tipo,nombre,autores,fecha,linea,subtipo,no_registro) {
+  console.log(`${usuario},${tipo},${nombre},${autores},${fecha},${linea},${subtipo},${no_registro}`);
   var response = db.INSERT(`reporte_3`,
-  `tipo,nombre,autores,fecha,linea,subtipo,no_registro`,
-  `${tipo},\'${nombre}\',\'${autores}\',\'${fecha}\',\'${linea}\',\'${subtipo}\',\'${no_registro}\'`,
+  `usuario,tipo,nombre,autores,fecha,linea,subtipo,no_registro`,
+  `\'${usuario}\',${tipo},\'${nombre}\',\'${autores}\',\'${fecha}\',\'${linea}\',\'${subtipo}\',\'${no_registro}\'`,
   `*`);
   return response;
 }
