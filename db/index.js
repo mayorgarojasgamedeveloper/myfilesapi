@@ -12,13 +12,11 @@ client.connect((err) => {
     console.log('Database Started');
 });
 
-exports.INSERT = async function(table_name, columns, values, contition = null, returning = null) {
+exports.INSERT = async function(table_name, columns, values, returning = null) {
 
   var sql = ``;
   sql += `INSERT INTO ${table_name} (${columns})`;
   sql += ` VALUES (${values})`;
-  if(contition !== null)
-    sql += ` WHERE ${contition}`;
   if(returning !== null)
     sql += ` RETURNING ${returning}`;
 
@@ -35,7 +33,6 @@ exports.SELECT = async function(table_name, columns = '*', condition = null) {
     sql += ` WHERE ${condition}`;
 
   const { rows } = await client.query(sql);
-  console.log(rows);
   return rows;
 }
 
