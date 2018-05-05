@@ -3,8 +3,14 @@ var controller = require('../controllers/usuarioController');
 var router = express.Router();
 
 router.post('/', async function(req, res, next) {
-  var response = await controller.create(req, res);
-  res.json(response);
+  var response = controller.create(req, res);
+  response.then(function(result) {
+    res.json(result)
+  });
+  response.catch(function(e) {
+    res.json(e)
+  });
+  //res.json(response);
 });
 
 router.get('/', async function(req, res, next) {

@@ -20,8 +20,8 @@ exports.INSERT = async function(table_name, columns, values, returning = null) {
   if(returning !== null)
     sql += ` RETURNING ${returning}`;
 
-  const { rows } = await client.query(sql);
-  return rows;
+  const query = client.query(sql);
+  return query;
 }
 
 exports.SELECT = async function(table_name, columns = '*', condition = null) {
