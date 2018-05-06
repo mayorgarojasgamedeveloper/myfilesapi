@@ -23,7 +23,7 @@ create table log (
 create table lineainovadora (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     linea		varchar(50) not null,
     primary key(id)
@@ -32,7 +32,7 @@ create table lineainovadora (
 create table proyecto (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     nombre		varchar(50) not null,
     fecha_inicio timestamp not null,
@@ -45,7 +45,7 @@ create table proyecto (
 create table reporte_4 (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     nombre		varchar(50) not null,
     fecha_inicio timestamp not null,
@@ -58,7 +58,7 @@ create table reporte_4 (
 create table reporte_1 (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     nombre		varchar(50) not null,
     autores		varchar(200),
@@ -74,7 +74,7 @@ create table reporte_1 (
 create table reporte_2 (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     nombre		varchar(50) not null,
     autores		varchar(200),
@@ -86,11 +86,10 @@ create table reporte_2 (
     nom_libro	varchar(40) not null,
     primary key(id)
 );
-
 create table reporte_3 (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     nombre		varchar(50) not null,
     autores		varchar(200),
@@ -105,7 +104,7 @@ create table reporte_3 (
 create table informetecnico (
 	id			serial not null,
     usuario		varchar(20),
-    tipo		smallint not null, 
+    tipo		smallint not null,
     -- Especializacion
     nombre		varchar(50) not null,
     autores		varchar(200),
@@ -116,4 +115,3 @@ create table informetecnico (
     dependencia	varchar(40) not null,
     primary key(id)
 );
-
