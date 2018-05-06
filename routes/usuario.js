@@ -1,5 +1,8 @@
 var express = require('express');
 var controller = require('../controllers/usuarioController');
+var multer  = require('multer');
+var upload = multer({ dest: 'C:\\Users\\mayor\\Documents\\PROJECTS\\academicweb\\img\\usuarios' });
+
 var router = express.Router();
 
 router.post('/', async function(req, res, next) {
@@ -33,9 +36,11 @@ router.put('/:usuario', async function(req, res, next) {
   res.json(response);
 });
 
-router.put('/:usuario/foto', async function(req, res, next) {
+router.post('/:usuario/foto',upload.single('foto'), async function(req, res, next) {
   var response = await controller.editFoto(req, res);
-  res.json(response);
+  var html = `<h1>Imagen Subida</h1>`;
+  html += `<h2>Cerrar esta pagina!!</h2>`;
+  res.send(html);
 });
 
 router.put('/:usuario/contrasena', async function(req, res, next) {

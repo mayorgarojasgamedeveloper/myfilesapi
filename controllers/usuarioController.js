@@ -26,7 +26,7 @@ exports.editInfo = function(req, res) {
 };
 
 exports.editFoto = function(req, res) {
-  var response = model.editFoto(req.params.usuario,req.body.foto);
+  var response = model.editFoto(req.params.usuario,req.file.filename);
   return response;
 };
 
