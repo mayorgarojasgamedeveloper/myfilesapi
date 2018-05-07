@@ -1,7 +1,7 @@
 create table usuario (
 	id			serial not null,
     usuario		varchar(20) not null unique,
-    contrasena	varchar(20) not null,
+    contrasena	varchar(40) not null,
     nombre		varchar(40),
     apellidoP	varchar(40),
     apellidoM	varchar(40),
