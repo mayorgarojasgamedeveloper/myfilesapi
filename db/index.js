@@ -65,3 +65,18 @@ exports.NOW = async function() {
   console.log(rows);
   return rows;
 }
+
+exports.SELECTPRODUCCION = async function() {
+
+  var sql = ``;
+  sql += `select id, usuario, linea, fecha, nombre, subtipo from reporte_1`;
+  sql += ` union`;
+  sql += ` select id, usuario, linea, fecha, nombre, subtipo from reporte_2`;
+  sql += ` union`;
+  sql += ` select id, usuario, linea, fecha, nombre, subtipo from reporte_2`;
+  sql += ` union`;
+  sql += ` select id, usuario, linea, fecha, nombre, subtipo from informetecnico;`;
+
+  const { rows } = await client.query(sql);
+  return rows;
+}

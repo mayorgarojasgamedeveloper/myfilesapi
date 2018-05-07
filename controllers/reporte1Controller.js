@@ -24,3 +24,8 @@ exports.delete = function(req, res) {
   var response = model.delete(req.body.id);
   return response;
 };
+
+exports.produccion = function(req, res) {
+  var response = model.produccion();
+  return response;
+};

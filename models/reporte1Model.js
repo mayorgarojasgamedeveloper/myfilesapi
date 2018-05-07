@@ -30,3 +30,8 @@ exports.delete = function(id) {
   var response = db.DELETE(`reporte_1`, `id=${id}`);
   return response;
 }
+
+exports.produccion = function() {
+  var response = db.SELECTPRODUCCION();
+  return response;
+}

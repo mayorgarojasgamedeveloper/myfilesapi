@@ -12,6 +12,11 @@ router.get('/', async function(req, res, next) {
   res.json(response);
 });
 
+router.get('/produccion', async function(req, res, next) {
+var response = await controller.produccion(req, res);
+res.json(response);
+});
+
 router.get('/:id', async function(req, res, next) {
   var response = await controller.view(req, res);
   res.json(response);
@@ -26,5 +31,6 @@ router.delete('/', async function(req, res, next) {
   var response = await controller.delete(req, res);
   res.json(response);
 });
+
 
 module.exports = router;
