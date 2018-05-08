@@ -30,3 +30,8 @@ exports.delete = function(id) {
   var response = db.DELETE(`lineainovadora`, `id=${id}`);
   return response;
 }
+
+exports.estadisticas = function() {
+  var response = db.ESTADISTICAS();
+  return response;
+}

@@ -1,7 +1,7 @@
 var {Client} = require('pg');
 var Router = require('express-promise-router');
 
-var URL = 'postgres://postgres:admin@localhost/academic';
+var URL = 'postgres://postgres:admin@127.0.0.1/academic';
 
 var client = new Client(URL);
 
@@ -73,9 +73,27 @@ exports.SELECTPRODUCCION = async function() {
   sql += ` union`;
   sql += ` select id, usuario, linea, fecha, nombre, subtipo from reporte_2`;
   sql += ` union`;
-  sql += ` select id, usuario, linea, fecha, nombre, subtipo from reporte_2`;
+  sql += ` select id, usuario, linea, fecha, nombre, subtipo from reporte_3`;
   sql += ` union`;
   sql += ` select id, usuario, linea, fecha, nombre, subtipo from informetecnico;`;
+
+  const { rows } = await client.query(sql);
+  return rows;
+}
+
+exports.ESTADISTICAS = async function() {
+
+  var sql = ``;
+sql += `   SELECT`;
+  sql += ` (SELECT count(*) FROM lineainovadora WHERE tipo=1) as linea,`;
+  sql += ` (`;
+      sql += ` select count(distinct informetecnico.id)+count(distinct reporte_1.id)+`;
+      sql += ` count(distinct reporte_2.id)+count(distinct reporte_3.id) as count_t4`;
+      sql += ` from informetecnico, reporte_1, reporte_2, reporte_3`;
+  sql += ` ) as produccion,`;
+  sql += ` (SELECT count(*) FROM proyecto WHERE tipo=3) as proyecto,`;
+  sql += ` (SELECT count(*) FROM reporte_4 WHERE tipo=4) as direccion,`;
+  sql += ` (SELECT count(*) FROM reporte_4 WHERE tipo=5) as estadia`;
 
   const { rows } = await client.query(sql);
   return rows;

@@ -9,7 +9,7 @@ exports.create = function(ip,accion,fecha) {
   return response;
 }
 exports.list = function() {
-  var response = db.SELECT(`log`);
+  var response = db.SELECT(`log ORDER BY id DESC`);
   return response;
 }
 exports.delete = function(id) {
