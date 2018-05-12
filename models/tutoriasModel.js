@@ -1,10 +1,10 @@
 var db = require('../db');
 
-exports.create = function(usuario,nombre,fecha_inicio,fecha_fin,horas_semana) {
-  console.log(`${usuario},${nombre},${fecha_inicio},${fecha_fin},${horas_semana}`);
+exports.create = function(usuario,nombre_alumno,fecha_inicio,fecha_fin,horas_semana) {
+  console.log(`${usuario},${nombre_alumno},${fecha_inicio},${fecha_fin},${horas_semana}`);
   var response = db.INSERT(`tutorias`,
-  `usuario,nombre,fecha_inicio,fecha_fin,horas_semana`,
-  `\'${usuario}\',\'${nombre}\',\'${fecha_inicio}\',\'${fecha_fin}\',${horas_semana}`,
+  `usuario,nombre_alumno,fecha_inicio,fecha_fin,horas_semana`,
+  `\'${usuario}\',\'${nombre_alumno}\',\'${fecha_inicio}\',\'${fecha_fin}\',${horas_semana}`,
   `*`);
   return response;
 }
@@ -17,10 +17,10 @@ exports.view = function(id) {
   var response = db.SELECT(`tutorias`, `*`, `id=${id}`);
   return response;
 }
-exports.edit = function(id,nombre,fecha_inicio,fecha_fin,horas_semana) {
-  console.log(`${id},${nombre},${fecha_inicio},${fecha_fin},${horas_semana}`);
+exports.edit = function(id,nombre_alumno,fecha_inicio,fecha_fin,horas_semana) {
+  console.log(`${id},${nombre_alumno},${fecha_inicio},${fecha_fin},${horas_semana}`);
   var response = db.UPDATE(`tutorias`,
-  `nombre=\'${nombre}\',fecha_inicio=\'${fecha_inicio}\',fecha_fin=\'${fecha_fin}\',horas_semana=${horas_semana}`,
+  `nombre_alumno=\'${nombre_alumno}\',fecha_inicio=\'${fecha_inicio}\',fecha_fin=\'${fecha_fin}\',horas_semana=${horas_semana}`,
   `id=${id}`,
   `*`);
   return response;

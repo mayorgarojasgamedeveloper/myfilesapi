@@ -47,8 +47,7 @@ create table carga (
     usuario		varchar(20) not null,
     nombre varchar(40) not null, 
     fecha_inicio timestamp not null, 
-    fecha_fin timestamp not null, 
-    autores varchar(80) not null, 
+    fecha_fin timestamp not null,
     programa varchar(40) not null, 
     horas_semana integer not null,
     primary key(id)
@@ -57,7 +56,7 @@ create table carga (
 create table tutorias (
 	id			serial not null,
     usuario		varchar(20) not null,
-    nombre varchar(40) not null, 
+    nombre_alumno varchar(40) not null, 
     fecha_inicio timestamp not null, 
     fecha_fin timestamp not null,
     horas_semana integer not null,
