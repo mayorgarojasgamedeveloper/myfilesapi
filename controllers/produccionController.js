@@ -1,7 +1,7 @@
-var model = require('../models/informetecnicoModel');
+var model = require('../models/produccionModel');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.usuario,req.body.tipo,req.body.nombre,req.body.autores,req.body.fecha,req.body.linea,req.body.subtipo,req.body.dependencia);
+  var response = model.create(req.body.usuario,req.body.tipo,req.body.titulo,req.body.fecha,req.body.autores,req.body.institucion,req.body.num_registro);
   return response;
 };
 
@@ -16,7 +16,7 @@ exports.view = function(req, res) {
 };
 
 exports.edit = function(req, res) {
-  var response = model.edit(req.params.id,req.body.nombre,req.body.autores,req.body.fecha,req.body.linea,req.body.dependencia);
+  var response = model.edit(req.params.id,req.body.tipo,req.body.titulo,req.body.fecha,req.body.autores,req.body.institucion,req.body.num_registro);
   return response;
 };
 

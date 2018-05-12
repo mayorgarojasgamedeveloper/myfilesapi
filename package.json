@@ -1,5 +1,5 @@
 {
-  "name": "academicapi",
+  "name": "myfilesapi",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -21,12 +21,12 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mayorgarojasgamedeveloper/academicapi.git"
+    "url": "git+https://github.com/mayorgarojasgamedeveloper/myfilesapi.git"
   },
   "author": "Fernando Mayorga",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mayorgarojasgamedeveloper/academicapi/issues"
+    "url": "https://github.com/mayorgarojasgamedeveloper/myfilesapi/issues"
   },
-  "homepage": "https://github.com/mayorgarojasgamedeveloper/academicapi#readme"
+  "homepage": "https://github.com/mayorgarojasgamedeveloper/myfilesapi#readme"
 }

@@ -1,7 +1,7 @@
-var model = require('../models/lineainovadoraModel');
+var model = require('../models/formacionModel');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.usuario,req.body.tipo,req.body.linea);
+  var response = model.create(req.body.usuario,req.body.grado,req.body.nombre,req.body.institucion,req.body.fecha_inicio,req.body.fecha_fin,req.body.fecha_obtencion,req.body.cedula);
   return response;
 };
 
@@ -16,16 +16,11 @@ exports.view = function(req, res) {
 };
 
 exports.edit = function(req, res) {
-  var response = model.edit(req.params.id,req.body.linea);
+  var response = model.edit(req.params.id,req.body.grado,req.body.nombre,req.body.institucion,req.body.fecha_inicio,req.body.fecha_fin,req.body.fecha_obtencion,req.body.cedula);
   return response;
 };
 
 exports.delete = function(req, res) {
   var response = model.delete(req.body.id);
-  return response;
-};
-
-exports.estadisticas = function(req, res) {
-  var response = model.estadisticas();
   return response;
 };

@@ -1,7 +1,7 @@
 var {Client} = require('pg');
 var Router = require('express-promise-router');
 
-var URL = 'postgres://postgres:admin@127.0.0.1/academic';
+var URL = 'postgres://postgres:admin@127.0.0.1/myfiles';
 
 var client = new Client(URL);
 
@@ -61,6 +61,13 @@ exports.DELETE = async function(table_name, condition) {
 exports.NOW = async function() {
 
   var sql = `SELECT NOW()`;
+  const { rows } = await client.query(sql);
+  console.log(rows);
+  return rows;
+}
+
+exports.SQL = async function(sql) {
+
   const { rows } = await client.query(sql);
   console.log(rows);
   return rows;

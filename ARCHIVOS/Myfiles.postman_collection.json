@@ -1,0 +1,1679 @@
+{
+	"id": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+	"name": "Myfiles",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "carga",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"order": [
+				"6f2fb27d-c0bd-ec19-1f10-9e01a34ea855",
+				"4eace06d-8e86-2804-dec2-5f647245a0e4",
+				"0fc52376-70cf-0c5b-e179-e1a06c92e16d",
+				"66b4ecd3-2447-725f-5ed1-45ba521468d9",
+				"de600205-169f-266c-16ff-12be88ca2e35"
+			],
+			"owner": "4127570",
+			"folders_order": [],
+			"auth": null,
+			"id": "cd87daf9-bd4f-12c0-993f-829273a6cbfe"
+		},
+		{
+			"name": "formacion",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"order": [
+				"d31f3d17-6d95-3cc7-7fe0-8dcde4fb0d06",
+				"cf5a5644-f671-b983-604f-5810c6d6e651",
+				"dcef0810-3c0f-605a-e337-7f602867e395",
+				"0094c127-9dd5-ad87-dee5-3248a79b792a",
+				"a1e85dfa-0352-7f7b-a586-488c4b83e6e0"
+			],
+			"owner": "4127570",
+			"folders_order": [],
+			"auth": null,
+			"id": "8715754e-25c8-032d-3633-ff956e7f1efd"
+		},
+		{
+			"name": "produccion",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"order": [
+				"aacecd32-eb9b-cad4-1d74-32a032f61eba",
+				"14061de1-2b2e-4abe-794e-0097719db098",
+				"7267582e-8ee4-e269-419a-b17c12058644",
+				"f9a83f2c-ab4c-ca46-acee-9f373775eb83",
+				"ea122556-4ac3-c6b7-f91e-2b6cdc0e16e2"
+			],
+			"owner": "4127570",
+			"folders_order": [],
+			"auth": null,
+			"id": "be3cb201-d915-848c-89a9-4680dcc20048"
+		},
+		{
+			"name": "tutorias",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"order": [
+				"88df7b7c-e4a2-4c20-a229-e848660eeb2b",
+				"dc02e382-7edd-3bfb-6aa3-4c8a3452c11b",
+				"c2ff7f27-24b8-07ee-6579-351cb734c751",
+				"14432949-0114-1dc1-7704-35a5178f3187",
+				"ad52221d-f84c-a552-b663-2050bfdad73f"
+			],
+			"owner": "4127570",
+			"folders_order": [],
+			"auth": null,
+			"id": "da1d49d5-fb2f-a985-6eef-bcc6bd2203ab"
+		},
+		{
+			"name": "usuario",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"order": [
+				"7dd5c7d8-6938-c3a8-39c5-e00f3222bdf8",
+				"eef6fa22-342b-63d5-cb71-311555c99c90",
+				"69baa50d-ef44-c7f5-d0aa-e4972ef1c1ac",
+				"a43a04b0-e8a4-50e7-fcac-5d88843afe4e",
+				"8162608e-257a-e8bf-e0da-49e95611bc30",
+				"325cb329-5d28-d804-064c-6f6843b51b7e",
+				"20d7f503-1f53-97b4-4214-1821d293446f",
+				"362cd65d-145e-30bf-4022-a69a8057dda0"
+			],
+			"owner": "4127570",
+			"folders_order": [],
+			"auth": null,
+			"id": "56c083ff-5f91-7ee5-2e17-d71b190606b1"
+		}
+	],
+	"folders_order": [
+		"56c083ff-5f91-7ee5-2e17-d71b190606b1",
+		"8715754e-25c8-032d-3633-ff956e7f1efd",
+		"be3cb201-d915-848c-89a9-4680dcc20048",
+		"cd87daf9-bd4f-12c0-993f-829273a6cbfe",
+		"da1d49d5-fb2f-a985-6eef-bcc6bd2203ab"
+	],
+	"timestamp": 1525384773322,
+	"owner": "4127570",
+	"public": false,
+	"events": [],
+	"variables": [],
+	"auth": null,
+	"requests": [
+		{
+			"id": "0094c127-9dd5-ad87-dee5-3248a79b792a",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/formacion/1",
+			"folder": "8715754e-25c8-032d-3633-ff956e7f1efd",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "grado",
+					"value": "Doctorado",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "Fernando Mayorga",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "institucion",
+					"value": "CUCEI",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_inicio",
+					"value": "2018-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_fin",
+					"value": "2018-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_obtencion",
+					"value": "2018-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cedula",
+					"value": "12324354",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526143848828,
+			"name": "edit",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "0fc52376-70cf-0c5b-e179-e1a06c92e16d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/carga/1",
+			"folder": "cd87daf9-bd4f-12c0-993f-829273a6cbfe",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526144566854,
+			"name": "view",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "14061de1-2b2e-4abe-794e-0097719db098",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/produccion",
+			"folder": "be3cb201-d915-848c-89a9-4680dcc20048",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526144266002,
+			"name": "list",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "14432949-0114-1dc1-7704-35a5178f3187",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tutorias/2",
+			"folder": "da1d49d5-fb2f-a985-6eef-bcc6bd2203ab",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Fernando Rojas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_inicio",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_fin",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "horas_semana",
+					"value": "10",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526145391206,
+			"name": "edit",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "20d7f503-1f53-97b4-4214-1821d293446f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario/fernando/contrasena",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "PUT",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"data": [
+				{
+					"key": "contrasena",
+					"value": "12345678",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "usuario edit contrasena",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525385567523,
+			"version": 2,
+			"responses": [],
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"collection_id": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "325cb329-5d28-d804-064c-6f6843b51b7e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario/fernando/foto",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "foto",
+					"value": "1987347sdsdjf09dsf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1525385539048,
+			"name": "usuario edit foto",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"collection_id": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "362cd65d-145e-30bf-4022-a69a8057dda0",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "alejandro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1525386147311,
+			"name": "usuario delete",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"collection_id": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "4eace06d-8e86-2804-dec2-5f647245a0e4",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/carga",
+			"folder": "cd87daf9-bd4f-12c0-993f-829273a6cbfe",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526144563597,
+			"name": "list",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "66b4ecd3-2447-725f-5ed1-45ba521468d9",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/carga/1",
+			"folder": "cd87daf9-bd4f-12c0-993f-829273a6cbfe",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Matematicas II",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_inicio",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_fin",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "autores",
+					"value": "Fernando Mayorga, Hassem Diaz",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "programa",
+					"value": "Ciencias Basicas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "horas_semana",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526144783373,
+			"name": "edit",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "69baa50d-ef44-c7f5-d0aa-e4972ef1c1ac",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario/fernando",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1525385388226,
+			"name": "usuario view",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"collection_id": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "6f2fb27d-c0bd-ec19-1f10-9e01a34ea855",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/carga",
+			"folder": "cd87daf9-bd4f-12c0-993f-829273a6cbfe",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "Matematicas III",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_inicio",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_fin",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "autores",
+					"value": "Fernando Mayorga, Hassem Diaz",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "programa",
+					"value": "Ciencias Basicas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "horas_semana",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526144644737,
+			"name": "crear",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7267582e-8ee4-e269-419a-b17c12058644",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/produccion/1",
+			"folder": "be3cb201-d915-848c-89a9-4680dcc20048",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526144197993,
+			"name": "view",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "7dd5c7d8-6938-c3a8-39c5-e00f3222bdf8",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario",
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526141271732,
+			"name": "usuario crear",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "8162608e-257a-e8bf-e0da-49e95611bc30",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario/fernando",
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "nombre",
+					"value": "Manuel Fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "apellido",
+					"value": "Mayorga",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "domicilio",
+					"value": "Joaquin Hola 12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ciudad",
+					"value": "GDL",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "telefono",
+					"value": "78637435",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "correo",
+					"value": "fernando@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre_dependiente_1",
+					"value": "Manuel Mayorga",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "edad_dependiente_1",
+					"value": "56",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre_dependiente_2",
+					"value": "Miriam Rojas",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "edad_dependiente_2",
+					"value": "48",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526141101952,
+			"name": "usuario edit info",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "88df7b7c-e4a2-4c20-a229-e848660eeb2b",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tutorias",
+			"folder": "da1d49d5-fb2f-a985-6eef-bcc6bd2203ab",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "Fernando Mayorga",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_inicio",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_fin",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "horas_semana",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526145357958,
+			"name": "crear",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a1e85dfa-0352-7f7b-a586-488c4b83e6e0",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/formacion",
+			"folder": "8715754e-25c8-032d-3633-ff956e7f1efd",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526141553986,
+			"name": "delete",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "a43a04b0-e8a4-50e7-fcac-5d88843afe4e",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario/fernando/fernando",
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526141278082,
+			"name": "usuario find",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "aacecd32-eb9b-cad4-1d74-32a032f61eba",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/produccion",
+			"folder": "be3cb201-d915-848c-89a9-4680dcc20048",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "tipo",
+					"value": "Libro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "titulo",
+					"value": "Titulo 1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "autores",
+					"value": "Fernando Mayorga, Hassem Diaz",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "institucion",
+					"value": "CUCEI",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "num_registro",
+					"value": "21324354",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526144264034,
+			"name": "crear",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ad52221d-f84c-a552-b663-2050bfdad73f",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tutorias",
+			"folder": "da1d49d5-fb2f-a985-6eef-bcc6bd2203ab",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526145153853,
+			"name": "delete",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "c2ff7f27-24b8-07ee-6579-351cb734c751",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tutorias/1",
+			"folder": "da1d49d5-fb2f-a985-6eef-bcc6bd2203ab",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526145148815,
+			"name": "view",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "cf5a5644-f671-b983-604f-5810c6d6e651",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/formacion",
+			"folder": "8715754e-25c8-032d-3633-ff956e7f1efd",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526141558555,
+			"name": "list",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "d31f3d17-6d95-3cc7-7fe0-8dcde4fb0d06",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/formacion",
+			"folder": "8715754e-25c8-032d-3633-ff956e7f1efd",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grado",
+					"value": "Maestria",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nombre",
+					"value": "Fernando Mayorga",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "institucion",
+					"value": "CUCEI",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_inicio",
+					"value": "2018-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_fin",
+					"value": "2018-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha_obtencion",
+					"value": "2018-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cedula",
+					"value": "12324354",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526143741675,
+			"name": "crear",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "dc02e382-7edd-3bfb-6aa3-4c8a3452c11b",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/tutorias",
+			"folder": "da1d49d5-fb2f-a985-6eef-bcc6bd2203ab",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"auth": null,
+			"time": 1526145146182,
+			"name": "list",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "dcef0810-3c0f-605a-e337-7f602867e395",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/formacion/1",
+			"folder": "8715754e-25c8-032d-3633-ff956e7f1efd",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526141556600,
+			"name": "view",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "de600205-169f-266c-16ff-12be88ca2e35",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/carga",
+			"folder": "cd87daf9-bd4f-12c0-993f-829273a6cbfe",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526144572615,
+			"name": "delete",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "ea122556-4ac3-c6b7-f91e-2b6cdc0e16e2",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/produccion",
+			"folder": "be3cb201-d915-848c-89a9-4680dcc20048",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526144202390,
+			"name": "delete",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "eef6fa22-342b-63d5-cb71-311555c99c90",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/usuario",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"events": [],
+			"auth": null,
+			"method": "GET",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"data": [
+				{
+					"key": "usuario",
+					"value": "fernando",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contrasena",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "permisos",
+					"value": "false",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "usuario list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525385317600,
+			"version": 2,
+			"responses": [],
+			"folder": "56c083ff-5f91-7ee5-2e17-d71b190606b1",
+			"collection_id": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"currentHelper": null,
+			"helperAttributes": null
+		},
+		{
+			"id": "f9a83f2c-ab4c-ca46-acee-9f373775eb83",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/produccion/1",
+			"folder": "be3cb201-d915-848c-89a9-4680dcc20048",
+			"queryParams": [],
+			"events": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [
+				{
+					"key": "tipo",
+					"value": "Capitulo de Libro",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "titulo",
+					"value": "Titulo 1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fecha",
+					"value": "2017-12-12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "autores",
+					"value": "Fernando Mayorga, Hassem Diaz",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "institucion",
+					"value": "CUCEI",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "num_registro",
+					"value": "21324354",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"auth": null,
+			"time": 1526144322733,
+			"name": "edit",
+			"description": "",
+			"collectionId": "9d387467-75a5-c17f-06d8-2b9dcdfcc286",
+			"responses": [],
+			"currentHelper": null,
+			"helperAttributes": null
+		}
+	]
+}

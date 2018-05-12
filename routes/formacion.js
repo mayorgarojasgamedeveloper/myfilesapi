@@ -1,5 +1,5 @@
 var express = require('express');
-var controller = require('../controllers/reporte1Controller');
+var controller = require('../controllers/formacionController');
 var router = express.Router();
 
 router.post('/', async function(req, res, next) {
@@ -10,11 +10,6 @@ router.post('/', async function(req, res, next) {
 router.get('/', async function(req, res, next) {
   var response = await controller.list(req, res);
   res.json(response);
-});
-
-router.get('/produccion', async function(req, res, next) {
-var response = await controller.produccion(req, res);
-res.json(response);
 });
 
 router.get('/:id', async function(req, res, next) {
@@ -31,6 +26,5 @@ router.delete('/', async function(req, res, next) {
   var response = await controller.delete(req, res);
   res.json(response);
 });
-
 
 module.exports = router;

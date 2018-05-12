@@ -1,7 +1,7 @@
-var model = require('../models/reporte2Model');
+var model = require('../models/tutoriasModel');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.usuario,req.body.tipo,req.body.nombre,req.body.autores,req.body.fecha,req.body.linea,req.body.subtipo,req.body.isbn,req.body.nom_libro);
+  var response = model.create(req.body.usuario,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.horas_semana);
   return response;
 };
 
@@ -16,7 +16,7 @@ exports.view = function(req, res) {
 };
 
 exports.edit = function(req, res) {
-  var response = model.edit(req.params.id,req.body.nombre,req.body.autores,req.body.fecha,req.body.linea,req.body.isbn,req.body.nom_libro);
+  var response = model.edit(req.params.id,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.horas_semana);
   return response;
 };
 

@@ -1,7 +1,7 @@
-var model = require('../models/proyectoModel');
+var model = require('../models/cargaModel');
 
 exports.create = function(req, res) {
-  var response = model.create(req.body.usuario,req.body.tipo,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.colaboradores,req.body.instituciones);
+  var response = model.create(req.body.usuario,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.autores,req.body.programa,req.body.horas_semana);
   return response;
 };
 
@@ -16,7 +16,7 @@ exports.view = function(req, res) {
 };
 
 exports.edit = function(req, res) {
-  var response = model.edit(req.params.id,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.colaboradores,req.body.instituciones);
+  var response = model.edit(req.params.id,req.body.nombre,req.body.fecha_inicio,req.body.fecha_fin,req.body.autores,req.body.programa,req.body.horas_semana);
   return response;
 };
 

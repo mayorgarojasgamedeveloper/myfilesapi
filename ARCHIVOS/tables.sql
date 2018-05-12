@@ -3,115 +3,63 @@ create table usuario (
     usuario		varchar(20) not null unique,
     contrasena	varchar(40) not null,
     nombre		varchar(40),
-    apellidoP	varchar(40),
-    apellidoM	varchar(40),
-    correo		varchar(50),
-    curriculum	varchar(400),
+    apellido		varchar(40),
+    domicilio	varchar(40),
+    ciudad		varchar(40),
+    telefono	varchar(15),
+    correo		varchar(40),
+    nombre_dependiente_1		varchar(80),
+    edad_dependiente_1		integer,
+    nombre_dependiente_2		varchar(80),
+    edad_dependiente_2		integer,
+    
     foto		varchar(100) not null default 'default',
-    permisos	boolean not null default false,
     primary key(id)
 );
 
-create table log (
+create table formacion (
 	id			serial not null,
-    ip			varchar(20),
-    accion		varchar(50),
-    fecha		timestamp,
+    usuario		varchar(20) not null,
+    grado varchar(40) not null, 
+    nombre varchar(40) not null, 
+    institucion varchar(40) not null, 
+    fecha_inicio timestamp not null, 
+    fecha_fin timestamp not null, 
+    fecha_obtencion timestamp not null, 
+    cedula varchar(15) not null,
     primary key(id)
 );
 
-create table lineainovadora (
+create table produccion (
 	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    linea		varchar(50) not null,
+    usuario		varchar(20) not null,
+    tipo varchar(40) not null, 
+    titulo varchar(40) not null, 
+    fecha timestamp not null, 
+    autores varchar(80) not null, 
+    institucion varchar(40) not null, 
+    num_registro varchar(15) not null,
     primary key(id)
 );
 
-create table proyecto (
+create table carga (
 	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    nombre		varchar(50) not null,
-    fecha_inicio timestamp not null,
-    fecha_fin	timestamp not null,
-    colaboradores varchar(200),
-    instituciones varchar(200),
+    usuario		varchar(20) not null,
+    nombre varchar(40) not null, 
+    fecha_inicio timestamp not null, 
+    fecha_fin timestamp not null, 
+    autores varchar(80) not null, 
+    programa varchar(40) not null, 
+    horas_semana integer not null,
     primary key(id)
 );
 
-create table reporte_4 (
+create table tutorias (
 	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    nombre		varchar(50) not null,
-    fecha_inicio timestamp not null,
-    fecha_fin	timestamp not null,
-    nombre_empresa varchar(80),
-    nombre_alumno varchar(80),
-    primary key(id)
-);
-
-create table reporte_1 (
-	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    nombre		varchar(50) not null,
-    autores		varchar(200),
-    fecha		timestamp,
-    linea		varchar(50) not null,
-    subtipo		smallint not null,
-    -- Subespecializacion
-    issn		varchar(20) not null,
-    nom_revista	varchar(40) not null,
-    primary key(id)
-);
-
-create table reporte_2 (
-	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    nombre		varchar(50) not null,
-    autores		varchar(200),
-    fecha		timestamp,
-    linea		varchar(50) not null,
-    subtipo		smallint not null,
-    -- Subespecializacion
-    isbn		varchar(20) not null,
-    nom_libro	varchar(40) not null,
-    primary key(id)
-);
-create table reporte_3 (
-	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    nombre		varchar(50) not null,
-    autores		varchar(200),
-    fecha		timestamp,
-    linea		varchar(50) not null,
-    subtipo		smallint not null,
-    -- Subespecializacion
-    no_registro	varchar(20) not null,
-    primary key(id)
-);
-
-create table informetecnico (
-	id			serial not null,
-    usuario		varchar(20),
-    tipo		smallint not null,
-    -- Especializacion
-    nombre		varchar(50) not null,
-    autores		varchar(200),
-    fecha		timestamp,
-    linea		varchar(50) not null,
-    subtipo		smallint not null,
-    -- Subespecializacion
-    dependencia	varchar(40) not null,
+    usuario		varchar(20) not null,
+    nombre varchar(40) not null, 
+    fecha_inicio timestamp not null, 
+    fecha_fin timestamp not null,
+    horas_semana integer not null,
     primary key(id)
 );

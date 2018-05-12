@@ -1,5 +1,5 @@
 var express = require('express');
-var controller = require('../controllers/informetecnicoController');
+var controller = require('../controllers/produccionController');
 var router = express.Router();
 
 router.post('/', async function(req, res, next) {

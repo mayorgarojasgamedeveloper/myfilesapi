@@ -1,10 +1,10 @@
 var db = require('../db');
 
-exports.create = function(usuario,contrasena,permisos) {
-  console.log(`${usuario},${contrasena},${permisos}`);
+exports.create = function(usuario,contrasena) {
+  console.log(`${usuario},${contrasena}`);
   var response = db.INSERT(`usuario`,
-  `usuario,contrasena,permisos`,
-  `\'${usuario}\',\'${contrasena}\',\'${permisos}\'`,
+  `usuario,contrasena`,
+  `\'${usuario}\',\'${contrasena}\'`,
   `*`);
   return response;
 }
@@ -22,10 +22,10 @@ exports.find = function(usuario, contrasena) {
   var response = db.SELECT(`usuario`, `*`, `usuario=\'${usuario}\' AND contrasena=\'${contrasena}\'`);
   return response;
 }
-exports.editInfo = function(usuario,nombre,apellidoP,apellidoM,correo,curriculum) {
-  console.log(`${usuario},${nombre},${apellidoP},${apellidoM},${correo},${curriculum}`);
+exports.editInfo = function(usuario,nombre,apellido,domicilio,ciudad,telefono,correo,nombre_dependiente_1,edad_dependiente_1,nombre_dependiente_2,edad_dependiente_2) {
+  console.log(`${usuario},${nombre},${apellido},${domicilio},${ciudad},${telefono},${correo},${nombre_dependiente_1},${edad_dependiente_1},${nombre_dependiente_2},${edad_dependiente_2}`);
   var response = db.UPDATE(`usuario`,
-  `nombre=\'${nombre}\',apellidoP=\'${apellidoP}\',apellidoM=\'${apellidoM}\',correo=\'${correo}\',curriculum=\'${curriculum}\'`,
+  `nombre=\'${nombre}\',apellido=\'${apellido}\',domicilio=\'${domicilio}\',ciudad=\'${ciudad}\',telefono=\'${telefono}\',correo=\'${correo}\',nombre_dependiente_1=\'${nombre_dependiente_1}\',edad_dependiente_1=\'${edad_dependiente_1}\',nombre_dependiente_2=\'${nombre_dependiente_2}\',edad_dependiente_2=\'${edad_dependiente_2}\'`,
   `usuario=\'${usuario}\'`,
   `*`);
   return response;
