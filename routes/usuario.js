@@ -1,7 +1,7 @@
 var express = require('express');
 var controller = require('../controllers/usuarioController');
 var multer  = require('multer');
-var upload = multer({ dest: 'C:\\Users\\mayor\\Documents\\PROJECTS\\myfilesweb\\img\\usuarios' });
+var upload = multer({ dest: 'C:\\Users\\mayor\\Documents\\PROJECTS\\myfilesweb\\myfiles\\img\\usuarios' });
 
 var router = express.Router();
 
